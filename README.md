@@ -82,8 +82,9 @@ Google Colab (Cloud-based model training)​
 
 ## Diagrams 
 
-![image](https://github.com/user-attachments/assets/87d455a4-0ee8-4cdc-a445-7bff20130296)
+![image](https://github.com/user-attachments/assets/fb7a56a5-7277-462c-82ee-884cfe288e17)
 
+![image](https://github.com/user-attachments/assets/73f8e3ee-b16a-47e1-9675-a028fbd27db2)
 
 
 
