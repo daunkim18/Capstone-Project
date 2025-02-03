@@ -25,7 +25,9 @@ Using AI-powered imaging technology to modify dental examinations. High-resoluti
 This project will benefit both patients and healthcare professionals. For patients who are scared of dental treatments, especially kids and elderly people, this technology can help reduce fear by making the examination process faster and more comfortable. It can encourage more people to visit the dentist without hesitation. For hospitals and clinics, it reduces the need for expensive equipment like X-ray machines and reduces the burden of sterilizing and buying multiple instruments. This can save time, money, and resources while improving the overall quality of care. 
 
 ## Project Timeline (3 Months) 
+
 This project follows a structured timeline to ensure efficient execution and completion within three months.
+
 ![gannt chart](https://github.com/user-attachments/assets/6651dfdd-f52e-4d41-89e9-a84d5d5bc4ba)
 
 | Task                                      | Start Date  | End Date    | Duration  |
