@@ -80,6 +80,9 @@ Google Colab (Cloud-based model training)​
 - GitHub (Version control)​
 - Other Libraries (Shutil, OS, JSON, YOLO)
 
+## Diagrams 
+
+![image](https://github.com/user-attachments/assets/87d455a4-0ee8-4cdc-a445-7bff20130296)
 
 
 
