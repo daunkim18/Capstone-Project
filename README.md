@@ -67,9 +67,20 @@ This study will build upon previous research but integrate the latest advancemen
 | Computational Resources (Colab Pro/Local GPU) | Yes              | Reshmi                      | Possible need for extended training time or additional GPU resources. |
 
 
+# Milestone 2
+## Environment setup
+Regardless of the type of project you are working on, you will need some work environments. You should determine tooling needs, document their usage/installation/configuration and include that information in your project repostiory.
+provide a clear pathway to setting up and configuring needed tools to begin working on your project. For maker-based projects this might be software dependencies and coding libraries or establishing some build files (in something like Docker). For breaker-based projects it might be creating VMs or docker containers to containerize the target of investigations.
+Google Colab (Cloud-based model training)​
+
+- YOLOv8 (AI object detection)​
+- Kaggle Datasets (Training images)​
+- Local Dental School Data (Pending approval)​
+- Python Libraries (NumPy, OpenCV, TensorFlow, Pandas)​
+- GitHub (Version control)​
+- Other Libraries (Shutil, OS, JSON, YOLO)
 
 
- 
 
 
 
