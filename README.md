@@ -11,13 +11,9 @@ Although X-rays, such as Orthopantomograms (OPG) and bitewing X-rays, are common
 Using AI-powered imaging technology to modify dental examinations. High-resolution images of the oral cavity will be captured from various angles (occlusal, buccal, and lingual) to provide detailed views of each tooth. These images will be processed using machine learning algorithms, such as YOLO for object detection, to accurately identify cavities or early signs of decay without time-consuming procedures involving probing or mirrors. 
 
 - Improve accuracy in detecting dental problems, reducing the chances of missing cavities.   
-
 - Provide a cost-effective alternative to X-rays by eliminating the need for expensive imaging equipment and associated fees.   
-
 - Improve the overall patient experience by minimizing discomfort and stress.   
-
 - Offer ethical, non-invasive, and safe methods for dental examinations.   
-
 - It reduces the need for a lot of sterilization equipment and instruments in dental hospitals, making the process simpler and easier to manage. 
 
 ## Project Merit: 
