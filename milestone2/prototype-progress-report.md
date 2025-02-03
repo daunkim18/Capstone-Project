@@ -10,7 +10,7 @@ also list them out like this:
 * outcome 2
 
 ## Hinderances
-(insert brief discussion of challenges encountered)
+(insert brief discussion of challenges encountered).
 
 ## Ongoing Risks
 (address your project risks identified from Milestone 1 and update them based on your current progress, this should be a table).
