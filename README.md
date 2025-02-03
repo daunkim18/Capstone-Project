@@ -28,7 +28,6 @@ This project will benefit both patients and healthcare professionals. For patien
 ![gannt chart](https://github.com/user-attachments/assets/6651dfdd-f52e-4d41-89e9-a84d5d5bc4ba)
 
 ## Risk List
-## Risk List
 
 As with any project, several risks could impact the successful completion of this AI-powered dental imaging study. 
 
