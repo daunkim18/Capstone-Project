@@ -27,6 +27,17 @@ This project will benefit both patients and healthcare professionals. For patien
 ## Project Timeline (3 Months) 
 ![gannt chart](https://github.com/user-attachments/assets/6651dfdd-f52e-4d41-89e9-a84d5d5bc4ba)
 
+This project follows a structured timeline to ensure efficient execution and completion within three months.
+
+| Task                                      | Start Date  | End Date    | Duration  |
+|-------------------------------------------|------------|------------|-----------|
+| Data Collection & Permission Requests    | Feb 1, 2024 | Feb 15, 2024 | 2 weeks  |
+| Data Preprocessing & Annotation          | Feb 16, 2024 | Feb 29, 2024 | 2 weeks  |
+| Model Training & Optimization (YOLOv8)   | Mar 1, 2024  | Mar 20, 2024 | 3 weeks  |
+| Validation & Performance Analysis        | Mar 21, 2024 | Apr 5, 2024  | 2 weeks  |
+| Comparative Analysis with Traditional Methods | Apr 6, 2024  | Apr 15, 2024 | 1.5 weeks |
+| Final Report & Presentation Preparation  | Apr 16, 2024 | Apr 30, 2024 | 2 weeks  |
+
 ## Risk List
 
 As with any project, several risks could impact the successful completion of this AI-powered dental imaging study. 
@@ -39,6 +50,25 @@ As with any project, several risks could impact the successful completion of thi
 | Time Constraints and Tight Deadlines (54)          | 6      | 9          | The project must be completed in three months, increasing the risk of delays. Mitigation: Follow a structured timeline with clear milestones. |
 | Team Availability and Coordination Issues (35)     | 5      | 7          | Scheduling conflicts may arise among team members. Mitigation: Maintain consistent communication, set clear responsibilities, and ensure regular progress check-ins. |
 
+## Methodology
+This study will build upon previous research but integrate the latest advancements in object detection, specifically utilizing YOLOv8 for multi-granularity tooth analysis and automated dental plaque detection. The research model will follow a data-driven approach, leveraging high-resolution intraoral images to train and validate AI models for tooth classification, cavity detection, and plaque quantification. The methodology will include data collection from diverse dental case studies, preprocessing and augmentation of images, and iterative model training and validation to ensure robustness and accuracy. By employing an updated YOLOv8 framework, the study will refine the detection accuracy beyond prior research models, ensuring enhanced performance in real-time clinical settings. The outcomes of this model will be validated through comparative analysis with traditional dental examination methods, ensuring the feasibility and reliability of AI-assisted diagnostics. 
+
+## Resources Needed
+
+| Resource                                      | Dr. Hale Needed? | Investigating Team Member | Description |
+|-----------------------------------------------|------------------|---------------------------|-------------|
+| Google Colab                                  | No               | Sravani                      | Cloud-based platform for training and testing the YOLOv8 model. |
+| YOLOv8 (Ultralytics)                          | No               | Sravani                      | Pre-trained object detection model for dental image analysis. |
+| Kaggle Dental Imaging Dataset                 | No               | Sravani                      | Publicly available dataset for training and validating the model. |
+| Local Dental School Imaging Data              | Yes              | Daun                      | Requesting real-world dental images for model enhancement. |
+| Python (NumPy, OpenCV, Pandas, TensorFlow)    | No               | Reshmi                      | Required libraries for data processing, model training, and evaluation. |
+| GitHub                                        | No               | Daun                      | Version control for project collaboration and documentation. |
+| Computational Resources (Colab Pro/Local GPU) | Yes              | Reshmi                      | Possible need for extended training time or additional GPU resources. |
+
+
+
+
+ 
 
 
 
