@@ -24,9 +24,9 @@ To successfully complete this AI-powered dental imaging project, the following t
 
 | Resource                                      | Dr. Hale Needed? | Investigating Team Member | Description |
 |-----------------------------------------------|------------------|---------------------------|-------------|
-| Google Colab                                  | No               | Sravani                      | Cloud-based platform for training and testing the YOLOv8 model. |
+| Google Colab                                  | Yes               | Sravani                      | Cloud-based platform for training and testing the YOLOv8 model. |
 | YOLOv8 (Ultralytics)                          | No               | Reshmi                      | Pre-trained object detection model for dental image analysis. |
-| Kaggle Dental Imaging Dataset                 | No               | Sravani                      | Publicly available dataset for training and validating the model. |
+| Kaggle Dental Imaging Dataset                 | No/Yes              | Sravani                      | Publicly available dataset for training and validating the model. |
 | Local Dental School Imaging Data              | Yes              | Daun                      | Requesting real-world dental images for model enhancement. |
 | Python (NumPy, OpenCV, Pandas, TensorFlow)    | No               | Reshmi                      | Required libraries for data processing, model training, and evaluation. |
 | GitHub                                        | No               | Daun                      | Version control for project collaboration and documentation. |
