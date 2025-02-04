@@ -53,9 +53,9 @@ This study will build upon previous research but integrate the latest advancemen
 
 Key Steps & Methodology:
 
-1. Data Collection & Preprocessing
-   Dataset: The oral images (caries vs. non-caries) will be labeled from a pre-existing dataset. Images will be preprocessed by resizing for uniformity. The images will be converted to NumPy arrays for processing and normalizing (rescaling pixel values) to [0,1] for     better convergence.
-2. Data Augmentation
+1. Data Collection & Preprocessing:
+   The oral images (caries vs. non-caries) will be labeled from a pre-existing dataset. Images will be preprocessed by resizing for uniformity. The images will be converted to NumPy arrays for processing and normalizing (rescaling pixel values) to [0,1] for     better convergence.
+2. Data Augmentation:
    To enhance model generalization and prevent overfitting, ImageDataGenerator will be used. The dataset diversity will be increased by applying rotation, width shift, height    shift, zooming, and flipping.
 4. Model Developement
 5. Model Training & Evaluation
