@@ -1,10 +1,11 @@
 # Executive Project Summary
-## Problem statement:  
+## Problem statement: AI-Powered Imaging Technology for Enhancing Dental Examinations
 
-Visiting the dentist often causes fear, especially in children and elderly patients, due to the overwhelming dental environment filled with equipment like dental chairs, lights, and sharp instruments. This fear can stop the patients from seeking timely dental care. Additionally, traditional dental examinations are time-consuming as healthcare professionals manually inspect each tooth, which can lead to discomfort for patients and a chance of missing small cavities or early signs of decay.  This is my area of interest because I have seen many people neglecting their oral hygiene because of fear, mainly in kids, and it is a time-consuming procedure.  
+Fear of visiting the dentist is a common issue, especially among children and elderly patients. The intimidating dental environment, filled with complex equipment, bright lights, and sharp instruments, can discourage individuals from seeking timely dental care. Additionally, conventional dental examinations require healthcare professionals to manually inspect each tooth, which is time-consuming, can cause discomfort, and may lead to missed early signs of decay. Current diagnostic tools such as X-rays, including Orthopantomograms (OPG) and bitewing X-rays, offer effective imaging solutions but come with drawbacks. They require scheduled appointments, can be costly, and may not always be covered by insurance. These limitations highlight the need for an alternative solution that enhances efficiency, improves patient comfort, and reduces diagnostic errors. This project aims to introduce AI-powered imaging technology as a transformative approach to dental examinations. High-resolution images of the oral cavity, captured from multiple angles (occlusal, buccal, and lingual), will be analyzed using machine learning algorithms such as YOLO for object detection. This approach will allow accurate identification of cavities and early signs of decay without invasive procedures or traditional probing methods. 
+Keywords:  AI Imaging Technology, YOLO, Dental Examination, Public Dataset 
 
-Although X-rays, such as Orthopantomograms (OPG) and bitewing X-rays, are commonly used to identify dental issues, they also have certain drawbacks. They are time-consuming, involve scheduling appointments, and may not always be covered by insurance, making them costly for patients. There is a need for a faster, less stressful, and cost-effective solution to improve the dental examination process and reduce errors. 
-
+# Research Question
+How can AI-powered imaging technology enhance dental examinations by improving accuracy, reducing patient discomfort, and minimizing reliance on traditional X-ray imaging while maintaining cost-effectiveness and efficiency? 
  
 ## Project goals: 
 
@@ -56,7 +57,7 @@ This study will build upon previous research but integrate the latest advancemen
 |-----------------------------------------------|------------------|---------------------------|-------------|
 | Google Colab                                  | Yes               | Sravani                      | Cloud-based platform for training and testing the YOLOv8 model. |
 | YOLOv8 (Ultralytics)                          | No               | Sravani                      | Pre-trained object detection model for dental image analysis. |
-| Kaggle Dental Imaging Dataset                 | No               | Sravani                      | Publicly available dataset for training and validating the model. |
+| Kaggle Dental Imaging Dataset                 | No/Yes               | Sravani                      | Publicly available dataset for training and validating the model. |
 | Local Dental School Imaging Data              | No              | Daun                      | Requesting real-world dental images for model enhancement. |
 | Python (NumPy, OpenCV, Pandas, TensorFlow)    | Yes               | Reshmi                      | Required libraries for data processing, model training, and evaluation. |
 | GitHub                                        | No               | Daun                      | Version control for project collaboration and documentation. |
