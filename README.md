@@ -51,6 +51,18 @@ As with any project, several risks could impact the successful completion of thi
 ## Methodology
 This study will build upon previous research but integrate the latest advancements in object detection, specifically utilizing YOLOv8 for multi-granularity tooth analysis and automated dental plaque detection. The research model will follow a data-driven approach, leveraging high-resolution intraoral images to train and validate AI models for tooth classification, cavity detection, and plaque quantification. The methodology will include data collection from diverse dental case studies, preprocessing and augmentation of images, and iterative model training and validation to ensure robustness and accuracy. By employing an updated YOLOv8 framework, the study will refine the detection accuracy beyond prior research models, ensuring enhanced performance in real-time clinical settings. The outcomes of this model will be validated through comparative analysis with traditional dental examination methods, ensuring the feasibility and reliability of AI-assisted diagnostics. 
 
+Key Steps & Methodology:
+
+1. Data Collection & Preprocessing
+   Dataset: Labeled oral images (caries vs. non-caries) from a pre-existing dataset.
+   Image Preprocessing: Images will be resized for uniformity. The images will be converted to NumPy arrays for processing and normalizing (rescaling pixel values) to [0,1] for   better convergence.
+2. Data Augmentation
+    To enhance model generalization and prevent overfitting, ImageDataGenerator will be used. The dataset diversity will be increased by applying rotation, width shift, height shift, zooming, and flipping.
+3. Model Developement
+4. Model Training & Evaluation
+5. Model Prediction & Testing
+6. Result
+
 ## Resources Needed
 
 | Resource                                      | Dr. Hale Needed? | Investigating Team Member | Description |
