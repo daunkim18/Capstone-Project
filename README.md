@@ -53,14 +53,22 @@ This study will build upon previous research but integrate the latest advancemen
 
 Key Steps & Methodology:
 
-1. Data Collection & Preprocessing:
-   The oral images (caries vs. non-caries) will be labeled from a pre-existing dataset. Images will be preprocessed by resizing for uniformity. The images will be converted to NumPy arrays for processing and normalizing (rescaling pixel values) to [0,1] for     better convergence.
-2. Data Augmentation:
-   To enhance model generalization and prevent overfitting, ImageDataGenerator will be used. The dataset diversity will be increased by applying rotation, width shift, height    shift, zooming, and flipping.
-4. Model Developement
-5. Model Training & Evaluation
-6. Model Prediction & Testing
-7. Result
+Step 1: Collect Data
+To collect data, we start by gathering dental images from available sources. Some of these images come from public datasets, like those on Kaggle, while others may come from healthcare organizations. The dataset should include both healthy teeth images (no cavities) and cavity images (with cavities). Having a large and well-balanced dataset is important because it helps the model learn more effectively.
+Step 2: Data Processing (Data Augmentation)
+We will use data augmentation techniques to increase the size of our dataset by applying different transformations to the images. These transformations include horizontal flipping, vertical flipping, cropping, and rotation. By applying these techniques, we can create more varied images, which will help the model learn to recognize caries (cavities) in different situations. This makes the model better at generalizing, so it can work well on new, unseen images.
+Step 3: Data Processing
+We’ll use NumPy and Pandas libraries to manage and simplify the data. NumPy will help with numerical tasks like handling image pixels and performing operations on them. Pandas will be used to organize the data, making it easier to process, especially when dealing with image labels and other related information. These libraries will help make the data processing more efficient and manageable.
+Step 4: Data Splitting
+We will divide the dataset into two parts. The Training Set will have most of the images and will be used to train the model. This allows the model to learn how to recognize the differences between healthy and cavity teeth. The Validation Set will have a few images and will be used to check how well the model performs after training. It helps us see if the model is working correctly and can make accurate predictions on new images. 
+Step 5: Data Labeling
+Data labeling is really important for training the model because it helps the model understand the differences between healthy teeth and teeth with caries. We will label the images to identify whether they show healthy teeth or cavity teeth. To do this, we'll use labeling tools like LabelImg . Each image will have a label attached, such as healthy or cavity, so the model can learn from these labels and make accurate predictions when given new images.
+Step 6: Training the YOLOv8 Model
+We’ll use YOLOv8, a model created by Ultralytics, to detect cavities in dental images. At first, the model doesn’t know what cavities are. During training, it learns to recognize cavities by being shown images repeatedly and adjusting its settings (called weights) to improve its understanding. YOLOv8 offers different model sizes, such as small (YOLOv8s), medium (YOLOv8m), and large (YOLOv8l), where the small model is faster but less accurate, and the large model is more accurate but slower. Training is done in batches, where we process a small group of images at a time, and we repeat this process many times, which is called an epoch. The more epochs we run, the better the model becomes at accurately detecting cavities in the images.
+Step 7: Model Evaluation
+After training, we evaluate the model's performance using the validation set. The goal is to see how well the model can detect cavities. We use metrics like True Positive to check if the model correctly identified cavities, and False Positive to track any mistakes it made. If the model's performance isn't good enough, we go back to the training step, adjusting the parameters or training for more epochs to improve accuracy.
+![image](https://github.com/user-attachments/assets/84f42165-c9e6-403a-a7cd-f030901dfa06)
+
 
 ## Resources Needed
 
