@@ -68,6 +68,19 @@ We’ll use YOLOv8, a model created by Ultralytics, to detect cavities in dental
 - Step 7: Model Evaluation  
 After training, we evaluate the model's performance using the validation set. The goal is to see how well the model can detect cavities. We use metrics like True Positive to check if the model correctly identified cavities, and False Positive to track any mistakes it made. If the model's performance isn't good enough, we go back to the training step, adjusting the parameters or training for more epochs to improve accuracy.
 
+## Initial Technical Aspect  
+| Steps	|Description |	Technical aspects |
+| ---------------|----------|--------------|
+|Data collection |	Collect dental images from Kaggle or healthcare organizations |	Kaggle |
+|	Data processing(Augmentation) |	It is helps for making more useful images from original one |	Horizontal / vertical flip, rotation and cropping of images |
+|	Data processing|	For simplifying the data set | NumPy and pandas |
+|	Data splitting |	Here the data divided into two types for model training |	Randomly divide the images or using libraries |
+|	Data labelling |	Give names to the image with bounding box |	Tools like Labellmg |
+|	Model training	| It is for differentiating healthy teeth from cavity-affected teeth|	YOLO model like small, medium, or large epoches| 
+|	Model evaluation |	It is used for accuracy of results	| Based on true positive, false positive, False negative |
+
+
+
 ## Resources Needed
 
 | Resource                                      | Dr. Hale Needed? | Investigating Team Member | Description |
