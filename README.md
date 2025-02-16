@@ -109,6 +109,11 @@ After training, we evaluate the model's performance using the validation set. Th
 | Data processing                               | No               | Sravani                   | Select the good quality of images, split them into training and validation sets and label them using tools|
 
 
+## Project Management:
+
+
+
+
 # Milestone 2
 ## Environment setup
 Regardless of the type of project you are working on, you will need some work environments. You should determine tooling needs, document their usage/installation/configuration and include that information in your project repostiory.
