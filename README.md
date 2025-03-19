@@ -109,23 +109,21 @@ After training, we evaluate the model's performance using the validation set. Th
 | Data processing                               | No               | Sravani                   | Select the good quality of images, split them into training and validation sets and label them using tools|
 
 
-## Project Management:
-
 
 
 
 # Milestone 2
 ## Environment setup
-Regardless of the type of project you are working on, you will need some work environments. You should determine tooling needs, document their usage/installation/configuration and include that information in your project repostiory.
-provide a clear pathway to setting up and configuring needed tools to begin working on your project. For maker-based projects this might be software dependencies and coding libraries or establishing some build files (in something like Docker). For breaker-based projects it might be creating VMs or docker containers to containerize the target of investigations.
-Google Colab (Cloud-based model training)​
-
+We have established and documented the required environments, including:
 - YOLOv8 (AI object detection)​
 - Kaggle Datasets (Training images)​
 - Local Dental School Data (Pending approval)​
 - Python Libraries (NumPy, OpenCV, TensorFlow, Pandas)​
 - GitHub (Version control)​
 - Other Libraries (Shutil, OS, JSON, YOLO)
+- Installing necessary dependencies for image processing and augmentation
+- Setting up repositories and ensuring proper access for all team members
+- Ensuring the functionality of visualization tools for graphing methods
 
 ## Diagrams 
 
