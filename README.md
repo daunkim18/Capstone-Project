@@ -131,5 +131,8 @@ We have established and documented the required environments, including:
 
 ![image](https://github.com/user-attachments/assets/73f8e3ee-b16a-47e1-9675-a028fbd27db2)
 
+![image](https://github.com/user-attachments/assets/382a64d3-43bc-4c4c-87da-3ce47bb8d913)
+
+https://lucid.app/lucidchart/93a01739-b88e-43ed-9f9f-545a3ce7d15f/edit?viewport_loc=-1881%2C-1088%2C3846%2C1780%2C0_0&invitationId=inv_911cf3ad-47b1-4a91-9b0d-f85b0fd5f99a
 
 
