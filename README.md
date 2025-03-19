@@ -1,4 +1,4 @@
-ABC
+
 # Executive Project Summary
 ## Problem statement: AI-Powered Imaging Technology for Enhancing Dental Examinations
 
