@@ -1,2 +1,2 @@
-Caries
-Caries Posterior
+Caries(posterior)
+Caries(anterior)
