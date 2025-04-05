@@ -98,7 +98,7 @@ copy_images(train_df, "train")
 copy_images(val_df, "val")
 copy_images(test_df, "test")
 
-# Optional: Print how many images were copied
+# Print how many images were copied
 train_files = glob.glob(os.path.join(output_dir, "train", "*", "*"))
 val_files = glob.glob(os.path.join(output_dir, "val", "*", "*"))
 test_files = glob.glob(os.path.join(output_dir, "test", "*", "*"))
@@ -108,7 +108,7 @@ print(f"Train: {len(train_files)}")
 print(f"Validation: {len(val_files)}")
 print(f"Test: {len(test_files)}")
 
-# Optional: Visual check with bar plots
+# Visual check with bar plots
 train_df['stratify_col'].value_counts().plot(kind='bar', title='Train Distribution')
 plt.show()
 val_df['stratify_col'].value_counts().plot(kind='bar', title='Validation Distribution')
