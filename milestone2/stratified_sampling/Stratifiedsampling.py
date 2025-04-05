@@ -3,9 +3,11 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import shutil
+import glob
+import matplotlib.pyplot as plt
 
 # Set dataset path
-image_dir = r"C:\Users\Reshmi\Capstone-Project\milestone2\Capstone-Project\milestone2\Reshmi_image_stratification\Subgrouped_images"
+image_dir = r"C:\Users\Reshmi\Capstone-Project\milestone2\Capstone-Project\milestone2\stratified_sampling\Subgrouped_images"
 data = []
 
 for folder_name in os.listdir(image_dir):
@@ -20,7 +22,7 @@ for folder_name in os.listdir(image_dir):
         for filename in os.listdir(folder_path):
             if filename.lower().endswith(('.jpg', '.jpeg', '.png')):
                 data.append({
-                    'filename': os.path.join(folder_name, filename),  # relative path
+                    'filename': os.path.join(folder_name, filename),
                     'region': region.lower(),
                     'class': label.lower()
                 })
@@ -35,45 +37,51 @@ else:
     print(f"CSV created with {len(df)} rows: dental_images.csv")
     print(df.head())
 
-# Example CSV structure: filename, region, class
-# region: 'posterior' or 'anterior'
-# class: 'caries' or 'non-caries'
-
-# Load metadata file
-df = pd.read_csv('dental_images.csv')
-
-# Create a stratification key
+# Load data
+df = pd.read_csv("dental_images.csv")
 df['stratify_col'] = df['region'] + '_' + df['class']
 
-# Perform stratified split (80% train, 20% test)
-train_df, test_df = train_test_split(
+# Step 1: Split into train+val and test (80% train_val, 20% test)
+train_val_df, test_df = train_test_split(
     df,
     test_size=0.2,
     stratify=df['stratify_col'],
     random_state=42
 )
 
-# reset indices
+# Step 2: Split train+val into train and val (75% train, 25% val of train_val)
+train_df, val_df = train_test_split(
+    train_val_df,
+    test_size=0.25,
+    stratify=train_val_df['stratify_col'],
+    random_state=42
+)
+
+# Reset indices
 train_df = train_df.reset_index(drop=True)
+val_df = val_df.reset_index(drop=True)
 test_df = test_df.reset_index(drop=True)
 
-# Save the splits
+# Save splits
 train_df.to_csv('train_split.csv', index=False)
+val_df.to_csv('val_split.csv', index=False)
 test_df.to_csv('test_split.csv', index=False)
 
-print("Train split:", train_df['stratify_col'].value_counts())
-print("Test split:", test_df['stratify_col'].value_counts())
-
-# Load the splits
-train_df = pd.read_csv("train_split.csv")
-test_df = pd.read_csv("test_split.csv")
-
-# Original image location
-base_folder = r"C:\Users\Reshmi\Capstone-Project\milestone2\Capstone-Project\milestone2\Reshmi_image_stratification\Subgrouped_images"
+# Print distribution counts
+print("\nTrain distribution:\n", train_df['stratify_col'].value_counts())
+print("\nValidation distribution:\n", val_df['stratify_col'].value_counts())
+print("\nTest distribution:\n", test_df['stratify_col'].value_counts())
 
 # Output directory
 output_dir = "output_images"
+base_folder = image_dir
 
+# Clear existing output directory if exists
+if os.path.exists(output_dir):
+    shutil.rmtree(output_dir)
+os.makedirs(output_dir)
+
+# Function to copy images
 def copy_images(df, split_type):
     for _, row in df.iterrows():
         subfolder = f"{row['region']}_{row['class']}"
@@ -85,7 +93,27 @@ def copy_images(df, split_type):
         except FileNotFoundError:
             print(f"File not found: {base_path}")
 
-# Copy train and test images
+# Copy all images
 copy_images(train_df, "train")
+copy_images(val_df, "val")
 copy_images(test_df, "test")
+
+# Optional: Print how many images were copied
+train_files = glob.glob(os.path.join(output_dir, "train", "*", "*"))
+val_files = glob.glob(os.path.join(output_dir, "val", "*", "*"))
+test_files = glob.glob(os.path.join(output_dir, "test", "*", "*"))
+
+print(f"\nImages copied:")
+print(f"Train: {len(train_files)}")
+print(f"Validation: {len(val_files)}")
+print(f"Test: {len(test_files)}")
+
+# Optional: Visual check with bar plots
+train_df['stratify_col'].value_counts().plot(kind='bar', title='Train Distribution')
+plt.show()
+val_df['stratify_col'].value_counts().plot(kind='bar', title='Validation Distribution')
+plt.show()
+test_df['stratify_col'].value_counts().plot(kind='bar', title='Test Distribution')
+plt.show()
+
 
