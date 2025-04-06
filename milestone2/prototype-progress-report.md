@@ -2,22 +2,24 @@
 ## Overview
 This milestone focuses on the continued development of our project, including environment setup, project realization, research paper outline, diagrams, issue tracking, and presentation.
 
-We have made significant progress, including identifying image clarity issues, implementing data augmentation techniques, graphing results, planning additional milestone steps, adding a license, debugging and processing augmentation code, and resizing images. Our team has worked collaboratively to refine the dataset, ensuring consistency and clarity for future machine learning applications.
+We have made significant progress, including identifying image clarity issues, implementing data augmentation techniques, graphing results, planning additional milestone steps, adding a license, debugging, processing augmentation code, stratified sampling based on the four subgroup of dataset, divided them into training, testing and validation sets, added labelling to the training images using labelimg, imported yolo 8 model, trained the model with training sets, and then tested the model with testing set of images. Our team has worked collaboratively to refine the dataset, ensuring consistency and clarity for future machine learning applications.
 
 ## Outcomes
 * Identified image clarity issues: Evaluated the dataset and noted inconsistencies.
 
-* Implemented data augmentation techniques: Applied various augmentation methods to improve image quality and diversity.
-
-* Resized images: Standardized image sizes for consistency.
-
 * Graphing methods: Visualized data through charts and graphs to analyze augmentation effects.
 
-* Debugged and processed augmentation code: Worked collaboratively to resolve issues in data processing scripts.
+* Debugging code: Worked collaboratively to resolve issues in data processing scripts.
 
 * Added a project license: Ensured proper documentation and licensing compliance.
 
-* Planned additional steps for Milestone 2: Defined upcoming tasks and
+* 
+
+* Labelling the images 
+
+* Planned additional steps for Milestone 2: Defined upcoming tasks(data augmentation, including more sets of images for model accuracy)
+
+  
 
 ## Hinderances
 * Some augmentation techniques introduced distortions that required further refinement.
