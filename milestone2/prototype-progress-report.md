@@ -6,20 +6,16 @@ We have made significant progress, including identifying image clarity issues, i
 
 ## Outcomes
 * Identified image clarity issues: Evaluated the dataset and noted inconsistencies.
-
 * Graphing methods: Visualized data through charts and graphs to analyze augmentation effects.
-
 * Debugging code: Worked collaboratively to resolve issues in data processing scripts.
-
 * Added a project license: Ensured proper documentation and licensing compliance.
-
-* 
-
-* Labelling the images 
-
-* Planned additional steps for Milestone 2: Defined upcoming tasks(data augmentation, including more sets of images for model accuracy)
-
-  
+* Collected and processed labeled image data from structured folders into a CSV file (dental_images.csv).
+* Implemented a stratified sampling method for balancing the distribution of image classes across train, validation, and test sets.
+* Splitted dataset into 80% training/validation and 20% test set, then splitted into 75% training and 25% validation from the train/val part.
+* Developed a Python script to automate copying images into structured folders for each split (train/val/test) using the shutil module.
+* Verified image distribution visually using bar plots for stratified columns across the different dataset splits.
+* Prepared code and data structure for modeling using tools like TensorFlow.
+* Planned additional steps for Milestone 2: Defined upcoming tasks(data augmentation, including more sets of images for model accuracy).
 
 ## Hinderances
 * Some augmentation techniques introduced distortions that required further refinement.
