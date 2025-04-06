@@ -1,0 +1,5 @@
+caries(anterior)
+Caries(anterior)
+Caries(posterior)
+caries(posterior)
+healthy teeth
