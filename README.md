@@ -120,8 +120,9 @@ We have established and documented the required environments, including:
 - Local Dental School Data (Pending approval)​
 - Python Libraries (NumPy, OpenCV, TensorFlow, Pandas)​
 - GitHub (Version control)​
-- Other Libraries (Shutil, OS, JSON, YOLO)
+- Other Libraries (Shutil, OS, YOLO)
 - Installing necessary dependencies for image processing and augmentation
+- Divide the images into training, validation, and test sets using stratified sampling.
 - Used Labellmg to label objects in the images
 - Setting up repositories and ensuring proper access for all team members
 - Ensuring the functionality of visualization tools for graphing methods
