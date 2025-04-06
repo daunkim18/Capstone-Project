@@ -115,18 +115,18 @@ After training, we evaluate the model's performance using the validation set. Th
 # Milestone 2
 ## Environment setup
 We have established and documented the required environments, including:
-- YOLOv8 (AI object detection)​
-- Kaggle Datasets (Training images)​
-- Local Dental School Data (Pending approval)​
-- Python Libraries (NumPy, OpenCV, TensorFlow, Pandas)​
-- GitHub (Version control)​
-- Other Libraries (Shutil, OS, YOLO)
-- Installing necessary dependencies for image processing and augmentation
+- YOLOv8 (AI object detection).​
+- Kaggle Datasets (Training images)​.
+- Python Libraries (NumPy, OpenCV, TensorFlow, Pandas, matplotlib)​.
+- GitHub (Version control)​.
+- Other Libraries (Shutil, OS, sklearn, seaborn, YOLO).
+- Installing necessary dependencies for image processing and augmentation.
 - Divide the images into training, validation, and test sets using stratified sampling.
-- Used Labellmg to label objects(caries) in the images
-- Setting up repositories and ensuring proper access for all team members
-- Ensuring the functionality of visualization tools for graphing methods
-
+- Used Labellmg to label objects(caries) in the images.
+- Setting up repositories and ensuring proper access for all team members.
+- Added liscence GNU General Public License v3.0.  
+- Using platforms for programming - Visual studio, Jupiter notebook.
+  
 ## Diagrams 
 
 ![image](https://github.com/user-attachments/assets/fb7a56a5-7277-462c-82ee-884cfe288e17)
