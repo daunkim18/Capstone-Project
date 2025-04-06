@@ -24,9 +24,16 @@ We have made significant progress, including identifying image clarity issues, i
 
 * Some team members faced minor access issues with repository permissions.
 
+* Figuring out the stratified sampling was time taking.
+
+* While Labelling images we had to do it manually which was time taking. 
+
 ## Ongoing Risks
 | Risk | Status | Mitigation Strategy |
 |------|--------|----------------------|
-| Image clarity loss due to augmentation | Ongoing | Adjust augmentation parameters and test different techniques |
+| Imbalances class distribustion| Mitigated | Implemented stratified sampling to balanced the data|
 | Data processing bugs | Mitigated | Regular debugging sessions and peer reviews |
 | Repository access issues | Addressed | Ensured all members have required permissions |
+| Model performance | Pending | Data is organized and ready but, we can see the impact after the training of the model |
+| Inconsistant folder or file name | Partially resolved | Resolving using bash commands |
+
