@@ -198,24 +198,24 @@ Traditional dental examination methods involve manual inspections and X-ray imag
 -	Ethical considerations in AI-based healthcare
 
 ## Methodology
-## Dataset collection:
+## Dataset collection
 - Collected dental image datasets from Kaggle and open-source platforms
 - Applied stratified sampling to have balanced image representation across dental conditions
 
-## Preprocessing and Augmentation:
+## Preprocessing and Augmentation
 - Filtered low-resolution images to retain medium-to-high clarity samples.
 - Applied image transformation methods like image resizing, cropping, rotation, normalization, and annotation.
 
-## Model Development:
+## Model Development
 - Trained YOLOv8 object detection model on annotated dental images.
 - Fine-tuned hyperparameters based on validation feedback.
 - Used modular Python scripts to automate folder creation and image reorganization using `shutil`, `os`, and `pandas`.
 
-## Validation & Performance Analysis:
+## Validation & Performance Analysis
 - Evaluated model performance using precision, recall, and F1-score.
 - Compared AI results with expert dentist annotations for reliability.
 
-## Comparative Study:
+## Comparative Study
 - Comparison between AI-based results and manual expert analysis.
 - Cost-effectiveness and efficiency metrics.
 
