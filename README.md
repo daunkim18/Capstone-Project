@@ -153,6 +153,7 @@ We have made significant progress, including identifying image clarity issues, i
 * Splitted dataset into 80% training/validation and 20% test set, then splitted into 75% training and 25% validation from the train/val part.
 * Developed a Python script to automate copying images into structured folders for each split (train/val/test) using the shutil module.
 * Verified image distribution visually using bar plots for stratified columns across the different dataset splits.
+* The images were annotated using Labellmg for accurate labeling and object detection preparation.
 * Prepared code and data structure for modeling using tools like TensorFlow.
 * Planned additional steps for Milestone 2: Defined upcoming tasks(data augmentation, including more sets of images for model accuracy).
 
