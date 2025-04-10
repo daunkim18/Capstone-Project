@@ -1,4 +1,4 @@
-# Progress Report (April 10, 2025)
+# Realization Progress Report (April 10, 2025)
 ## Overview
 Since Milestone 2, we completed additional model evaluations, finalized the data preparation pipeline, and packaged the YOLOv8 object detection solution for deployment in dental diagnostics. Our focus was on polishing the model, validating results, and preparing the final report and documentation.
 
