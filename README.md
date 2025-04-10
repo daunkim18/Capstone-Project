@@ -180,7 +180,7 @@ We have made significant progress, including identifying image clarity issues, i
 
 
 # Research Paper Outline
-## abstract
+## Abstract
 Traditional dental examination methods involve manual inspections and X-ray imaging, which can be time-consuming, uncomfortable, and costly. AI-powered imaging technology presents an innovative alternative by leveraging machine learning techniques to analyze high-resolution intraoral images for cavity detection and plaque assessment. This research explores the effectiveness of AI-driven dental imaging, specifically employing the YOLOv8 object detection model to enhance diagnostic accuracy and patient comfort while minimizing reliance on traditional X-rays. Our approach involves dataset collection, augmentation, stratified sampling, image preprocessing, structured dataset pipelines and model training to optimize AI-assisted diagnostics. This paper will discuss the methodology, findings, and implications for improving efficiency in dental healthcare.
 
 ## Introduction
