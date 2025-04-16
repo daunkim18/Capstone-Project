@@ -140,13 +140,12 @@ Install the `ultralytics` package in a Python ≥ 3.8 environment with PyTorch
 ```bash
 pip install ultralytics
 For alternative installation methods (Conda, Docker, source build), see the Ultralytics Quickstart Guide.
+```
 
 ## Usage
 Command Line Interface (CLI)
 Run predictions, training, validation, and exports directly from your terminal:
 
-bash
-Copy
 # Predict with a pretrained YOLOv8n model
 yolo predict model=yolov8n.pt source="https://ultralytics.com/images/bus.jpg" imgsz=640
 The yolo command supports tasks such as train, val, predict, and export. For additional CLI examples, check the YOLO CLI Docs.
@@ -155,7 +154,6 @@ The yolo command supports tasks such as train, val, predict, and export. For add
 Embed YOLOv8 into your Python projects with the same flexibility as the CLI:
 
 ```python
-Copy
 from ultralytics import YOLO
 
 # Load a pretrained YOLOv8n model
