@@ -126,6 +126,67 @@ We have established and documented the required environments, including:
 - Setting up repositories and ensuring proper access for all team members.
 - Added liscence GNU General Public License v3.0.  
 - Using platforms for programming - Visual studio, Jupiter notebook.
+
+# YOLOv8 Quickstart
+
+See below for quickstart installation and usage examples. For comprehensive guidance on training, validation, prediction, and deployment, refer to our full [Ultralytics Docs](https://docs.ultralytics.com/).
+
+---
+
+## Install
+
+Install the `ultralytics` package in a Python ≥ 3.8 environment with PyTorch ≥ 1.8:
+
+```bash
+pip install ultralytics
+For alternative installation methods (Conda, Docker, source build), see the Ultralytics Quickstart Guide.
+
+Usage
+Command Line Interface (CLI)
+Run predictions, training, validation, and exports directly from your terminal:
+
+bash
+Copy
+# Predict with a pretrained YOLOv8n model
+yolo predict model=yolov8n.pt source="https://ultralytics.com/images/bus.jpg" imgsz=640
+The yolo command supports tasks such as train, val, predict, and export. For additional CLI examples, check the YOLO CLI Docs.
+
+Python API
+Embed YOLOv8 into your Python projects with the same flexibility as the CLI:
+
+python
+Copy
+from ultralytics import YOLO
+
+# Load a pretrained YOLOv8n model
+model = YOLO("yolov8n.pt")
+
+# Train on your dataset (e.g., coco8.yaml) for 50 epochs at 640px
+model.train(data="coco8.yaml", epochs=50, imgsz=640, device="0")
+
+# Validate on the validation split
+model.val()
+
+# Run inference on an image
+results = model("path/to/image.jpg")
+results[0].show()
+
+# Export to ONNX
+model.export(format="onnx")
+Supported Workflows
+Dataset management: Kaggle or local folders
+
+Image labeling: LabelImg producing YOLO-format .txt labels
+
+Data splits: Stratified train/val/test sampling
+
+Dependencies: NumPy, OpenCV, TensorFlow, Pandas, Matplotlib, scikit-learn, seaborn, etc.
+
+Version control: GitHub repositories
+
+License: GNU GPL v3.0
+
+
   
 ## Diagrams 
 
