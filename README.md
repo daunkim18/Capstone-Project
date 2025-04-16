@@ -147,8 +147,7 @@ Command Line Interface (CLI)
 Run predictions, training, validation, and exports directly from your terminal:
 
 # Predict with a pretrained YOLOv8n model
-yolo predict model=yolov8n.pt source="https://ultralytics.com/images/bus.jpg" imgsz=640
-The yolo command supports tasks such as train, val, predict, and export. For additional CLI examples, check the YOLO CLI Docs.
+yolo predict model=yolov8n.pt For additional CLI examples, check the YOLO CLI Docs.
 
 ## Python API
 Embed YOLOv8 into your Python projects with the same flexibility as the CLI:
