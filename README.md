@@ -154,7 +154,7 @@ The yolo command supports tasks such as train, val, predict, and export. For add
 ## Python API
 Embed YOLOv8 into your Python projects with the same flexibility as the CLI:
 
-python
+```python
 Copy
 from ultralytics import YOLO
 
@@ -172,7 +172,8 @@ results = model("path/to/image.jpg")
 results[0].show()
 
 # Export to ONNX
-model.export(format="onnx")```
+model.export(format="onnx")
+```
   
 ## Diagrams 
 
