@@ -172,9 +172,7 @@ results = model("path/to/image.jpg")
 results[0].show()
 
 # Export to ONNX
-model.export(format="onnx")
-
----
+model.export(format="onnx")```
   
 ## Diagrams 
 
