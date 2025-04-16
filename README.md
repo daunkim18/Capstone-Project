@@ -291,8 +291,9 @@ Traditional dental examination methods involve manual inspections and X-ray imag
 ![image](https://github.com/user-attachments/assets/0ba93639-ffb2-4948-83fc-573f6672015a)
 ![image](https://github.com/user-attachments/assets/166c5073-cc3e-4cdf-92c0-c7a9cd5d6c2c)
 ![image](https://github.com/user-attachments/assets/b60c21bb-e1f1-4dc7-9896-5acb0e351409)
-![image](https://github.com/user-attachments/assets/8cef7184-22ac-465d-b913-3128fcfaee90)
+![image](https://github.com/user-attachments/assets/7dfed78a-c6d3-48d4-8e2a-d55b7b83485a)
 ![image](https://github.com/user-attachments/assets/f22bc383-9529-4e46-9b95-c2f49fc189b5)
+![image](https://github.com/user-attachments/assets/8cef7184-22ac-465d-b913-3128fcfaee90)
 ![image](https://github.com/user-attachments/assets/0a687003-9d9a-4932-b223-e83e173de9d5)
 
 
