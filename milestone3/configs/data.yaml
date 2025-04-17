@@ -1,0 +1,8 @@
+train: C:/Users/daunk/Capstone-Project/milestone3/data/images/train
+val:   C:/Users/daunk/Capstone-Project/milestone3/data/images/val
+test:  C:/Users/daunk/Capstone-Project/milestone3/data/images/test
+
+nc: 2
+names:
+  0: "cavity"
+  1: "plaque"

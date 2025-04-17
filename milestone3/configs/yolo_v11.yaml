@@ -1,0 +1,5 @@
+# Just placeholders for now
+nc: 2
+width_multiple: 0.5
+depth_multiple: 0.33
+anchors: [[10,13, 16,30, 33,23], [30,61, 62,45, 59,119]]
