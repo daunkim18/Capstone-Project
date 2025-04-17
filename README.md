@@ -126,6 +126,51 @@ We have established and documented the required environments, including:
 - Setting up repositories and ensuring proper access for all team members.
 - Added liscence GNU General Public License v3.0.  
 - Using platforms for programming - Visual studio, Jupiter notebook.
+
+# YOLOv8 Quickstart
+
+See below for quickstart installation and usage examples. For comprehensive guidance on training, validation, prediction, and deployment, refer to the official full [Ultralytics Docs](https://docs.ultralytics.com/).
+
+---
+
+## Install
+
+Install the `ultralytics` package in a Python ≥ 3.8 environment with PyTorch ≥ 1.8:
+
+```bash
+pip install ultralytics
+For alternative installation methods (Conda, Docker, source build), see the Ultralytics Quickstart Guide.
+```
+
+## Usage
+Command Line Interface (CLI)
+Run predictions, training, validation, and exports directly from your terminal:
+
+# Predict with a pretrained YOLOv8n model
+yolo predict model=yolov8n.pt For additional CLI examples, check the YOLO CLI Docs.
+
+## Python API
+Embed YOLOv8 into your Python projects with the same flexibility as the CLI:
+
+```python
+from ultralytics import YOLO
+
+# Load a pretrained YOLOv8n model
+model = YOLO("yolov8n.pt")
+
+# Train on your dataset (e.g., coco8.yaml) for 50 epochs at 640px
+model.train(data="coco8.yaml", epochs=50, imgsz=640, device="0")
+
+# Validate on the validation split
+model.val()
+
+# Run inference on an image
+results = model("path/to/image.jpg")
+results[0].show()
+
+# Export to ONNX
+model.export(format="onnx")
+```
   
 ## Diagrams 
 
@@ -134,6 +179,21 @@ We have established and documented the required environments, including:
 ![image](https://github.com/user-attachments/assets/73f8e3ee-b16a-47e1-9675-a028fbd27db2)
 
 ![image](https://github.com/user-attachments/assets/382a64d3-43bc-4c4c-87da-3ce47bb8d913)
+
+![image](https://github.com/user-attachments/assets/0ba93639-ffb2-4948-83fc-573f6672015a)
+
+![image](https://github.com/user-attachments/assets/7dfed78a-c6d3-48d4-8e2a-d55b7b83485a)
+
+![image](https://github.com/user-attachments/assets/8cef7184-22ac-465d-b913-3128fcfaee90)
+
+![image](https://github.com/user-attachments/assets/b60c21bb-e1f1-4dc7-9896-5acb0e351409)
+
+![image](https://github.com/user-attachments/assets/166c5073-cc3e-4cdf-92c0-c7a9cd5d6c2c)
+
+![image](https://github.com/user-attachments/assets/f22bc383-9529-4e46-9b95-c2f49fc189b5)
+
+![image](https://github.com/user-attachments/assets/0a687003-9d9a-4932-b223-e83e173de9d5)
+
 
 https://lucid.app/lucidchart/93a01739-b88e-43ed-9f9f-545a3ce7d15f/edit?viewport_loc=-1881%2C-1088%2C3846%2C1780%2C0_0&invitationId=inv_911cf3ad-47b1-4a91-9b0d-f85b0fd5f99a
 
@@ -242,6 +302,7 @@ Traditional dental examination methods involve manual inspections and X-ray imag
 ## Diagrams & Figures
 - **Workflow Diagram**: Overview of data collection, preprocessing, and model training.
 - **AI Pipeline**: Step-by-step flow of YOLOv8 object detection for dental diagnostics.
+
 
 
 
