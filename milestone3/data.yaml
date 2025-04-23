@@ -1,5 +1,5 @@
 # data.yaml
-train: C:\Users\daunk\Capstone-Project\milestone3\rotated_images     # adjust these paths to where your train images really are
-val:   C:\Users\daunk\Capstone-Project\milestone3\cropped_images       # adjust to your validation images folder
+train: C:\Users\daunk\Capstone-Project\milestone3\data\images\train     # adjust these paths to where your train images really are
+val:   C:\Users\daunk\Capstone-Project\milestone3\data\images\val       # adjust to your validation images folder
 nc: 2                       # number of classes
 names: ['healthy', 'cavity']  # your class names
