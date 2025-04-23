@@ -7,12 +7,12 @@ def load_cfg(path="C:/Users/daunk/Capstone-Project/milestone3/configs/data.yaml"
 
 
 def stratified_split(src_img, src_lbl, dst, seed=42):
-    print("📂 Image source folder:", src_img)
-    print("📂 Label source folder:", src_lbl)
+    print("Image source folder:", src_img)
+    print("Label source folder:", src_lbl)
 
     imgs = [f for f in sorted(os.listdir(src_img)) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
-    print("🚀 Found", len(imgs), "image(s) before split.")
-    print("🧾 Example image file(s):", imgs[:3])
+    print("Found", len(imgs), "image(s) before split.")
+    print("Example image file(s):", imgs[:3])
 
     random.seed(seed)
     random.shuffle(imgs)
@@ -34,17 +34,17 @@ def stratified_split(src_img, src_lbl, dst, seed=42):
                 shutil.copy(image_path, os.path.join(dst, 'images', split, f))
                 shutil.copy(label_path, os.path.join(dst, 'labels', split, base + '.txt'))
             else:
-                print(f"⚠️ Missing pair for: {f} (image or label)")
+                print(f"Missing pair for: {f} (image or label)")
 
 if __name__=='__main__':
     cfg = load_cfg()
     img_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "raw_images"))
     lbl_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data", "raw_labels"))
     output_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "data"))
-    print("💡 img_dir:", img_dir)
-    print("💡 lbl_dir:", lbl_dir)
-    print("💡 output_dir:", output_dir)
-    print("📂 Files in image folder:", os.listdir(img_dir))
-    print("📂 Files in label folder:", os.listdir(lbl_dir))
+    print("img_dir:", img_dir)
+    print("lbl_dir:", lbl_dir)
+    print("output_dir:", output_dir)
+    print("Files in image folder:", os.listdir(img_dir))
+    print("Files in label folder:", os.listdir(lbl_dir))
     stratified_split(img_dir, lbl_dir, output_dir)
 
