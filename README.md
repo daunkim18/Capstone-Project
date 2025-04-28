@@ -122,7 +122,7 @@ We have established and documented the required environments, including:
 - Other Libraries (Shutil, OS, sklearn, seaborn, YOLO).
 - Installing necessary dependencies for image processing and augmentation.
 - Divide the images into training, validation, and test sets using stratified sampling.
-- Used Labellmg to label objects(caries) in the images.
+- Used LabelImg to label objects(caries) in the images.
 - Setting up repositories and ensuring proper access for all team members.
 - Added liscence GNU General Public License v3.0.  
 - Using platforms for programming - Visual studio, Jupiter notebook.
@@ -171,7 +171,100 @@ results[0].show()
 # Export to ONNX
 model.export(format="onnx")
 ```
-  
+# NumPy
+
+here are the quick start installations steps and usage instructions for NumPy
+https://numpy.org/install/ 
+
+## Install
+
+pip install numpy
+
+## Usage
+To perform the mathematical operations
+
+# Open CV
+
+here are the quick start installations steps and usage instructions for Open CV (https://pypi.org/project/opencv-python/#installation-and-usage )
+
+## Install
+
+pip install opencv
+
+## Usage
+Used for computer vision and processing
+
+# Tensor Flow
+
+here are the quick start installations steps and usage instructions for Tensor Flow(https://pypi.org/project/tensorflow/ )
+
+## Install
+
+pip install tensorflow
+
+## usage
+Used for high performance numerical computation.
+
+# Pandas
+
+here are the quick start installations steps and usage instructions for Pandas(https://pypi.org/project/pandas/#documentation )
+
+## Install
+
+pip install pandas
+
+## Usage
+
+Used for data analysis and manipulation.
+
+# Matplotlib
+
+here are the quick start installations steps and usage instructions for matplotlibs(https://matplotlib.org/stable/install/index.html )
+
+## Install
+
+pip install matplotlib 
+
+## Usage
+
+Used for data visualizations.
+
+# sklearn
+
+here are the quick start installations steps and usage instructions for sklearn(https://pypi.org/project/scikit-learn/ )
+
+## Install
+
+pip install scikit-learn
+
+## Usage
+To provide the comprehensive tool kit for machine learning
+
+# seaborn
+
+here are the quick start installations steps and usage instructions for seaborn(https://pypi.org/project/seaborn/ )
+
+## Install
+
+pip install seaborn
+
+## Usage
+Visualization library for statistical graphics plotting in python
+
+# LabelImg 
+
+here are the quick start installations steps and usage instructions for LabelImg(https://pypi.org/project/labelImg/ )
+
+## Install
+
+pip3 install labelImg
+labelImg
+labelImg [IMAGE_PATH] [PRE-DEFINED CLASS FILE] 
+
+## Usage
+Used for annotaions of images
+
+
 ## Diagrams 
 
 ![image](https://github.com/user-attachments/assets/fb7a56a5-7277-462c-82ee-884cfe288e17)
