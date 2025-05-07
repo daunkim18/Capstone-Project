@@ -1,0 +1,5 @@
+train: C:/Users/Reshmi/Capstone-Project/milestone3/Train_Val_Test_without_augumentation/Train/Images
+val: C:/Users/Reshmi/Capstone-Project/milestone3/Train_Val_Test_without_augumentation/Val/Images
+
+nc: 4 # number of classes
+names: ['caries', 'healthy_tooth', 'non_carries', 'crown']
