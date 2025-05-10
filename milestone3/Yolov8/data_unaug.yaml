@@ -1,0 +1,5 @@
+train: C:\Users\Reshmi\Capstone-Project\milestone3\Yolov8\Dataset_unaugumented\Train\images
+val: C:\Users\Reshmi\Capstone-Project\milestone3\Yolov8\Dataset_unaugumented\Val\images
+
+nc: 2 # number of classes
+names: ['caries', 'healthy']
