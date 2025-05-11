@@ -131,6 +131,24 @@ We have established and documented the required environments, including:
 
 See below for quickstart installation and usage examples. For comprehensive guidance on training, validation, prediction, and deployment, refer to the official full [Ultralytics Docs](https://docs.ultralytics.com/).
 
+# YOLOv11 Quickstart
+
+## 📦 How to Run the Model
+
+### 1. Prepare the Dataset
+
+```bash
+python scripts/prepare_data.py
+```
+
+### 2. Train the Model
+
+```bash
+python scripts/train.py
+```
+
+Results will be saved across multiple training runs inside the `runs/detect/` directory.
+
 ---
 
 ## Install
