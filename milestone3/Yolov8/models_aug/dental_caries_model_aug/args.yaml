@@ -1,8 +1,8 @@
 task: detect
 mode: train
-model: C:/Users/Reshmi/Capstone-Project/milestone3/models1/dental_caries_model/weights/best.pt
-data: C:/Users/Reshmi/Capstone-Project/milestone3/Yolov8/data_aug.yaml
-epochs: 1
+model: C:\Users\Reshmi\Capstone-Project\milestone3\Yolov8\models1\dental_caries_model\weights\best.pt
+data: C:\Users\Reshmi\Capstone-Project\milestone3\Yolov8\data_aug.yaml
+epochs: 160
 time: null
 patience: 100
 batch: 16
@@ -12,7 +12,7 @@ save_period: -1
 cache: false
 device: cpu
 workers: 0
-project: C:/Users/Reshmi/Capstone-Project/milestone3/models_aug
+project: C:\Users\Reshmi\Capstone-Project\milestone3\Yolov8\models_aug
 name: dental_caries_model_aug
 exist_ok: true
 pretrained: true
@@ -102,4 +102,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: C:\Users\Reshmi\Capstone-Project\milestone3\models_aug\dental_caries_model_aug
+save_dir: C:\Users\Reshmi\Capstone-Project\milestone3\Yolov8\models_aug\dental_caries_model_aug
