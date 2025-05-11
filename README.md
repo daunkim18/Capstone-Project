@@ -133,7 +133,7 @@ See below for quickstart installation and usage examples. For comprehensive guid
 
 # YOLOv11 Quickstart
 
-## 📦 How to Run the Model
+## How to Run the Model
 
 ### 1. Prepare the Dataset
 
