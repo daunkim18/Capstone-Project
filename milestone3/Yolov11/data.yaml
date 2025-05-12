@@ -1,5 +1,9 @@
 # data.yaml
 train: C:\Users\daunk\Capstone-Project\milestone3\data\images\train     # adjust these paths to where your train images really are
 val:   C:\Users\daunk\Capstone-Project\milestone3\data\images\val       # adjust to your validation images folder
-nc: 2                       # number of classes
-names: ['healthy', 'cavity']  # your class names
+nc: 4                       # number of classes
+names:   
+0: caries(anterior)
+1: caries(posterior)
+2: caries(mixed)
+3: healthy # your class names
