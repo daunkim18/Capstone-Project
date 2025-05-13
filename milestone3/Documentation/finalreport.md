@@ -308,9 +308,9 @@ You will get a visual output in `demo_output.jpg`.
   
 2. Training logs including losses and performance metrics are recorded in:
    
-Unaugmented Datasets: `milestone3/Yolov8/model/models1_unaug/dental_caries_model/results.csv` and visualized in `milestone3/Yolov8/model/models1/dental_caries_model/results.png`.
+ Unaugmented Datasets: `milestone3/Yolov8/model/models1_unaug/dental_caries_model/results.csv` and visualized in `milestone3/   Yolov8/model/models1/dental_caries_model/results.png`.
 
-Augmented Datasets: `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.csv` and visualized in `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.png`.
+ Augmented Datasets: `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.csv` and visualized in `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.png`.
 
 #### YOLOv11
 1. Training scripts are stored in `milestone3/Yolov11/Model_YOLOv11.ipynb`, and config files in `milestone3/Yolov11/configs`.
