@@ -182,12 +182,7 @@ venv\Scripts\activate         # On Windows
 
 ### 3. Install Required Packages
 
-```bash
-pip install --upgrade pip
-pip install -r requirements.txt
-```
-
-If you don’t have a requirements file, you can manually install:
+Manually install:
 
 ```bash
 pip install ultralytics opencv-python pandas matplotlib
@@ -200,23 +195,19 @@ pip install ultralytics opencv-python pandas matplotlib
 ```
 Capstone-Project/
 └── milestone3/
-    ├── data/
-    │   ├── images/
-    │   │   ├── train/
-    │   │   ├── val/
-    │   │   └── test/
-    │   ├── labels/
-    │   │   ├── train/
-    │   │   ├── val/
-    │   │   └── test/
-    │   └── data.yaml
-    ├── scripts/
-    │   ├── prepare_data.py
-    │   ├── train.py
-    │   └── demo_yolo11.py
-    ├── runs/
-    └── yolov8n.pt
-    └── yolov11n.pt
+│   ├── Augmentation/              # Scripts or images used for data augmentation
+│   ├── Dataset/                   # Processed datasets ready for training/testing
+│   ├── Documentation/            # Final report, readme resources, references
+│   ├── Original_Subgrouped_images/  # Subgrouped raw data for traceability
+│   ├── Raw_Training_images/      # Unprocessed raw input images
+│   ├── Yolov8/                   # YOLOv8 model scripts, weights, results
+│   ├── Yolov11/                  # YOLOv11 model scripts, weights, results
+│   └── Yolo-Demo.mp4             # Demo video showcasing model predictions
+│
+├── README.md                     # Project overview, setup, usage, model results
+├           
+├── .gitignore                    # Files/folders to ignore in GitHub
+└──  LICENSE 
 ```
 
 ---
@@ -296,7 +287,7 @@ You will get a visual output in `demo_output.jpg`.
 3. Stratified sampling: Stratified data splits (train/val/test) can be reviewed in the repository under /milestone2/stratified_sampling/output_images/Images/, with sampling code in milestone2/stratified_sampling/Stratifiedsampling.py.
 4. Labeled YOLO-format annotation files for each image are saved under milestone2/stratified_sampling/output_images/Labels. The labeling process was done using Makesense.ai and saved in YOLOv5 format.
 
-### Training Section: YOLOv8 and YOLOv11
+### Training Section: YOLOv8
 #### YOLOv8
 1. Training scripts are stored in milestone3/Yolov8/Yolo8_Original.ipynb and config files in `milestone3/Yolov8/Config_files`, and `milestone3/Yolov8/models1/dental_caries_model/weights` contains trained weights like best.pt for YOLOv8.
   
@@ -304,12 +295,7 @@ You will get a visual output in `demo_output.jpg`.
    
  Unaugmented Datasets: `milestone3/Yolov8/model/models1_unaug/dental_caries_model/results.csv` and visualized in `milestone3/   Yolov8/model/models1/dental_caries_model/results.png`.
 
- Augmented Datasets: `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.csv` and visualized in `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.png`.
-
-#### YOLOv11
-1. Training scripts are stored in `milestone3/Yolov11/Model_YOLOv11.ipynb`, and config files in `milestone3/Yolov11/configs`.
-   
-2. Training logs including losses and performance metrics are recorded in 
+ Augmented Datasets: `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.csv` and visualized in `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.png`. 
 
 ### Model Evaluation Section
 #### YOLOv8
@@ -317,9 +303,7 @@ You will get a visual output in `demo_output.jpg`.
    
 2. Predicted outputs on unseen images are saved in the `milestone3/Yolov8/Predicted_images` folder, with bounding boxes overlaid using OpenCV.
 
-#### YOLOv11
-
-### Results Section — YOLOv8 / YOLOv11
+### Results Section — YOLOv8
 #### YOLOv8
 1. See full evaluation log for YOLOv8 in `milestone3/Yolov8/model` respectively.
    
@@ -333,5 +317,3 @@ You will get a visual output in `demo_output.jpg`.
    Fig. 5: `milestone3/Yolov8/model/models_lrg/dental_caries_model/PR_curve.png`
    
    Fig. 6: `milestone3/Yolov8/Predicted_images/Predict_images_aug/annotated/annotated_22.jpg`, `milestone3/Yolov8/Predicted_images/Predict_images_aug/annotated/annotated_142.jpg`
-
-#### YOLOv11
