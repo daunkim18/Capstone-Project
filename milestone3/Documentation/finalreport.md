@@ -297,9 +297,9 @@ You will get a visual output in `demo_output.jpg`.
    
 ## Final report Summery:
 ### Methodology: Dataset Preparation and Preprocessing
-1. Data collection: All raw intraoral images used for this project are available in the (stratified_sampling/input_classified_images/) folder in the repository.
+1. Data collection: All raw intraoral images used for this project are available in the stratified_sampling/input_classified_images/ folder in the repository.
 2. Data augmentation: The augmented dataset with transformations is saved in the milestone3/Augmentation/Augmented_images directory and scripts are available under milestone3/Augmentation/Augmentation_codes. 
-3. Stratified sampling: Stratified data splits (train/val/test) can be reviewed in the repository under    /milestone2/stratified_sampling/output_images/Images/, with sampling code in milestone2/stratified_sampling/Stratifiedsampling.py.
+3. Stratified sampling: Stratified data splits (train/val/test) can be reviewed in the repository under /milestone2/stratified_sampling/output_images/Images/, with sampling code in ( milestone2/stratified_sampling/Stratifiedsampling.py ).
 4. Labeled YOLO-format annotation files for each image are saved under milestone2/stratified_sampling/output_images/Labels. The labeling process was done using Makesense.ai and saved in YOLOv5 format.
 
 ### Training Section: YOLOv8 and YOLOv11
