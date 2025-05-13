@@ -212,7 +212,7 @@ Capstone-Project/
 
 ---
 
-## Model Training
+## YOLOv11 Quickstart
 
 
 ### 🔹 YOLOv11
@@ -297,11 +297,23 @@ You will get a visual output in `demo_output.jpg`.
 
  Augmented Datasets: `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.csv` and visualized in `milestone3/Yolov8/model/models_aug/dental_caries_model_aug/results.png`. 
 
+#### YOLOv11
+- **Training Code**: `scripts/train.py`
+- **Data Preparation Script**: `scripts/prepare_data.py`
+- **Training Configuration File**: `configs/data.yaml`
+- **Trained Weights**: Stored in `runs/detect/trainXX/weights/best.pt`
+- **Image Size**: 640
+- **Epochs**: 100
+- **Batch Size**: 8
+
 ### Model Evaluation Section
 #### YOLOv8
 1. The precision-recall curves (PR), F1 curves, and confusion matrices are available in `milestone3/Yolov8/model` as PR_curve.png, F1_curve.png, and confusion_matrix.png respectively.
    
 2. Predicted outputs on unseen images are saved in the `milestone3/Yolov8/Predicted_images` folder, with bounding boxes overlaid using OpenCV.
+
+#### YOLOv11
+- All training visual outputs are located in `Yolov11/runs/detect/trainXX/` (e.g., `train13/`, `train14/`).
 
 ### Results Section — YOLOv8
 #### YOLOv8
@@ -317,3 +329,9 @@ You will get a visual output in `demo_output.jpg`.
    Fig. 5: `milestone3/Yolov8/model/models_lrg/dental_caries_model/PR_curve.png`
    
    Fig. 6: `milestone3/Yolov8/Predicted_images/Predict_images_aug/annotated/annotated_22.jpg`, `milestone3/Yolov8/Predicted_images/Predict_images_aug/annotated/annotated_142.jpg`
+
+#### YOLOv11
+- **Precision-Recall Curve**: `runs/detect/train14/PR_curve.png`
+- **Confusion Matrix**: `runs/detect/train14/confusion_matrix.png`
+- **F1 Score Curve**: `runs/detect/train14/F1_curve.png`
+- **Output**: Annotated predictions from `runs/detect/train14/val_batch0_pred.jpg`
