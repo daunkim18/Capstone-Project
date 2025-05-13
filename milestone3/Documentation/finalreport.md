@@ -295,4 +295,4 @@ You will get a visual output in `demo_output.jpg`.
 2. Run:
    yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=data/test/
 ## Final report Summery:
-
+All intraoral images are present in the milestone2/stratified_sampling/
