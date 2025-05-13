@@ -1,0 +1,5 @@
+train: C:\Users\Reshmi\Capstone-Project\milestone3\data\Extended_Dataset\train\images
+val: C:\Users\Reshmi\Capstone-Project\milestone3\data\Extended_Dataset\val\images
+
+nc: 2 # number of classes
+names: ['caries', 'healthy']
