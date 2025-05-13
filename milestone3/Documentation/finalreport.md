@@ -26,9 +26,19 @@ This project aimed to enhance dental diagnostics through the application of deep
 - Augmented data improved model robustness but did not significantly increase AP.
 - Data quality and annotation consistency proved more important than just dataset size.
 ### YOLOv11
-- Achieved stable validation accuracy (~85%) after 10 epochs of training.
+- Achieved stable validation accuracy (~85%) after 100 epochs of training.
+- 60% of cavity and plaque cases were correctly classified and remaining 40% were primarily misclassified as background, indicating room for improvement in edge cases and finer object distinctions.
+- The model generalized well despite the absence of augmentation, showing promise for broader deployment.
 - Deployed model to test on unseen samples, with real-time inference capabilities.
 - Final model and documentation uploaded to GitHub for public access.
+### Model Comparison
+- YOLOv11 outperformed YOLOv8 due to:
+- Larger and more balanced dataset
+- Better F1 and mAP scores
+- Superior detection of both anterior and posterior dental conditions
+- On the other hand, YOLOv8, although lightweight and efficient, was limited by:
+- Dataset size and quality
+- Inability to learn healthy class patterns
 
 **Key Outcomes:**
 * Labeled dataset prepared and visually validated.
