@@ -210,7 +210,7 @@ Capstone-Project/
 └──  LICENSE 
 ```
 
----
+
 ## YOLOv8 Quickstart
 
 YOLOv8 Directory Structure
@@ -224,6 +224,7 @@ Yolov8/
 ├── runs/detect/predict/      # YOLOv8 prediction results
 ├── Yolo8_Original.ipynb      # Jupyter notebook with training & evaluation steps
 └── yolov8n.pt                # Pretrained model or final weights
+```
 
 Training Command
 
