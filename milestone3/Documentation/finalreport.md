@@ -223,12 +223,6 @@ Capstone-Project/
 
 ## Model Training
 
-### 🔹 YOLOv8
-
-```bash
-python scripts/prepare_data.py
-python scripts/train.py
-```
 
 ### 🔹 YOLOv11
 
