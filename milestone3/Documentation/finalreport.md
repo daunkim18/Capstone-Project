@@ -86,6 +86,8 @@ results[0].show()
 
 ### Export to ONNX
 model.export(format="onnx")
+
+## The yolo11 model also has similar installation steps as yolo8. 
 ### NumPy
 here are the quick start installations steps and usage instructions for NumPy https://numpy.org/install/
 Install
