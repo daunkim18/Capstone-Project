@@ -42,18 +42,98 @@ This project aimed to enhance dental diagnostics through the application of deep
 - Matplotlib
 - Jupyter Notebook or VSCode
 
-### Installation Instructions
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/YOLO-Tooth-Detection.git
-   cd YOLO-Tooth-Detection
-2. Create a virtual environment (optional but recommended):
-   python -m venv yolovenv
-   source yolovenv/bin/activate  # On Windows: yolovenv\Scripts\activate
-3. Install dependencies:
-   pip install -r requirements.txt
-4. Download YOLOv8 weights (optional):
-   yolo download model=yolov8n.pt
+## ⚙️ Installation & Setup Guide
+
+This guide outlines how to set up the environment to train and test the YOLOv11-based dental cavity detection model.
+
+###  1. Clone the Repository
+
+```bash
+git clone https://github.com/daunkim18/Capstone-Project.git
+cd Capstone-Project/milestone3
+```
+
+### 2. Create & Activate Python Environment
+
+> Recommended Python version: **3.10** or **3.11**
+
+```bash
+# Create a virtual environment
+python -m venv venv
+
+# Activate it
+source venv/bin/activate        # On macOS/Linux
+venv\Scripts\activate         # On Windows
+```
+
+### 3. Install Required Packages
+
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+If you don’t have a requirements file, you can manually install:
+
+```bash
+pip install ultralytics opencv-python pandas matplotlib
+```
+
+---
+
+### 4. Folder Structure
+
+```
+Capstone-Project/
+└── milestone3/
+    ├── data/
+    │   ├── images/
+    │   │   ├── train/
+    │   │   ├── val/
+    │   │   └── test/
+    │   ├── labels/
+    │   │   ├── train/
+    │   │   ├── val/
+    │   │   └── test/
+    │   └── data.yaml
+    ├── scripts/
+    │   ├── prepare_data.py
+    │   ├── train.py
+    │   └── demo_yolo11.py
+    ├── runs/
+    └── yolov8n.pt
+```
+
+---
+
+### 5. Run Training
+
+```bash
+python scripts/prepare_data.py
+python scripts/train.py
+```
+
+Training results will be saved in `runs/detect/train14/` or similar.
+
+---
+
+### 6. Run Demo Inference
+
+Prepare an image and label file:
+
+```
+data/images/test/demo.jpg
+data/labels/test/demo.txt
+```
+
+Then:
+
+```bash
+python scripts/demo_yolo11.py
+```
+
+You will get a visual output in `demo_output.jpg`.
+
 
 ### Getting Started
 #### To Preprocess Images:
