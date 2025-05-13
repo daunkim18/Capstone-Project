@@ -294,4 +294,5 @@ You will get a visual output in `demo_output.jpg`.
 1. Place test images into a folder (data/test/).
 2. Run:
    yolo task=detect mode=predict model=runs/detect/train/weights/best.pt source=data/test/
+## Final report Summery:
 
