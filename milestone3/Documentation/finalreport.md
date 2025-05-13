@@ -287,7 +287,7 @@ You will get a visual output in `demo_output.jpg`.
 3. Stratified sampling: Stratified data splits (train/val/test) can be reviewed in the repository under `/milestone2/stratified_sampling/output_images/Images/`, with sampling code in `milestone2/stratified_sampling/Stratifiedsampling.py`.
 4. Labeled YOLO-format annotation files for each image are saved under `milestone2/stratified_sampling/output_images/Labels`. The labeling process was done using Makesense.ai and saved in YOLOv5 format.
 
-### Training Section: YOLOv8
+### Training Section: 
 #### YOLOv8
 1. Training scripts are stored in milestone3/Yolov8/Yolo8_Original.ipynb and config files in `milestone3/Yolov8/Config_files`, and `milestone3/Yolov8/models1/dental_caries_model/weights` contains trained weights like best.pt for YOLOv8.
   
