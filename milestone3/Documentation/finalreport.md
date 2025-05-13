@@ -13,8 +13,10 @@ This project aimed to enhance dental diagnostics through the application of deep
 - **Data Collection**: Images were sourced from Kaggle. The dataset included intraoral dental images used to train the model for caries detection.
 - **Data Cleanng**: Python libraries such as NumPy and Pandas were used to clean the data. This involved removing duplicate and blurry images to ensure high-quality input.
 - **splitting Data**: The dataset was divided into training, testing, and validation sets using the stratified sampling method to maintain class distribution across all subsets. The stratified sampling method was specifically used for image splitting to ensure that each class was fairly represented.
-- **Data Augmentaion**: Various augmentation techniques, such as flipping and rotating, were applied to the training images to increase diversity and help the model generalize better.
+- **Data Augmentaion**: Various augmentation techniques, such as flipping, rotating, resizing and cropping, were applied to the training images to increase diversity and help the model generalize better.
 - **Image Labelling**: Images in the training and validation sets were labeled using LabelImg and MakeSense.AI. This labeling helped the model learn to differentiate between caries, healthy teeth, and background.
+- **Model Selection**: Initial experiments were conducted with YOLOv8, which showed limitations due to small dataset size. The project later shifted to YOLOv11, which was better suited for larger datasets and achieved higher accuracy.
+- **Model Training**: Models were trained using Ultralytics YOLO framework. Both non-augmented and augmented versions of the dataset were used to compare performance. Evaluation was done using F1 Score, Precision, Recall, and mAP0.5.
 
 ## Results / Findings
 - Successfully implemented a YOLOv8 and YOLOv11 object detection model to identify two target classes: cavities and plaque.
