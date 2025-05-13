@@ -211,6 +211,41 @@ Capstone-Project/
 ```
 
 ---
+## YOLOv8 Quickstart
+
+YOLOv8 Directory Structure
+
+```
+Yolov8/
+├── Augmentation_codes/       # Scripts used for augmenting training images
+├── Config_files/             # data.yaml and other config files
+├── Predicted_images/         # Output predictions (bounding boxes on test images)
+├── model/                    # Saved model weights during training
+├── runs/detect/predict/      # YOLOv8 prediction results
+├── Yolo8_Original.ipynb      # Jupyter notebook with training & evaluation steps
+└── yolov8n.pt                # Pretrained model or final weights
+
+Training Command
+
+```python
+from ultralytics import YOLO
+
+model = YOLO('yolov8n.pt')  # Load YOLOv8 Nano
+model.train(
+    data='Config_files/data.yaml',
+    epochs=160,
+    imgsz=240,
+    batch=16,
+    project='runs/detect',
+    name='predict',
+    exist_ok=True
+)
+```
+
+Results Location
+Trained model outputs and prediction results will appear under:
+
+`milestone3/Yolov8/Predicted_images`
 
 ## YOLOv11 Quickstart
 
