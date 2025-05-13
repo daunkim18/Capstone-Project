@@ -122,7 +122,7 @@ python scripts/train.py
 python scripts/train.py --data configs/data.yaml --epochs 100 --batch 8 --imgsz 640
 ```
 
-Results will appear under `runs/detect/train14/`.
+Results will appear under `runs/detect`
 
 ---
 
