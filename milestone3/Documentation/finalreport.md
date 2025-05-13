@@ -51,7 +51,7 @@ This project aimed to enhance dental diagnostics through the application of deep
 ## Demo
 https://unomaha.yuja.com/V/Video?v=13022187&node=56381952&a=89808787 
 
-## Install Instructions
+## Requirements:
 
 We have established and documented the required environments, including:
 * YOLOv8 (AI object detection).
@@ -155,14 +155,6 @@ here are the quick start installations steps and usage instructions for LabelImg
 pip3 install labelImg labelImg labelImg [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
 ### Usage
 Used for annotaions of images
-### Requirements
-- Python 3.10+
-- pip
-- `ultralytics` (for YOLOv8 and YOLOv11)
-- TensorFlow (for CNN version)
-- OpenCV
-- Matplotlib
-- Jupyter Notebook or VSCode
 
 ## ⚙️ Installation & Setup Guide
 
