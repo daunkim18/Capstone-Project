@@ -10,12 +10,11 @@ This project aimed to enhance dental diagnostics through the application of deep
 - Deliver clear documentation, user instructions, and a demo for end users.
 
 ## Project Methodology
-- **Data Preprocessing**: Stratified splitting of labeled data, normalization, and augmentation using `ImageDataGenerator`.
-- **Visual Validation**: Verified class distributions using bar plots.
-- **Model Architecture**: Trained a CNN model for binary classification and YOLOv8 and YOLOv11 for object detection tasks.
-- **Model Training**: Used validation loss monitoring, early stopping, and regularization techniques to prevent overfitting.
-- **Evaluation**: Tested model on unseen intraoral images, and analyzed performance using accuracy, loss curves, and sample predictions.
-- **Packaging**: Project is fully documented and uploaded to GitHub with installation and usage instructions.
+- **Data Collection**: Images were sourced from Kaggle. The dataset included intraoral dental images used to train the model for caries detection.
+- **Data Cleanng**: Python libraries such as NumPy and Pandas were used to clean the data. This involved removing duplicate and blurry images to ensure high-quality input.
+- **splitting Data**: The dataset was divided into training, testing, and validation sets using the stratified sampling method to maintain class distribution across all subsets. The stratified sampling method was specifically used for image splitting to ensure that each class was fairly represented.
+- **Data Augmentaion**: Various augmentation techniques, such as flipping and rotating, were applied to the training images to increase diversity and help the model generalize better.
+- **Image Labelling**: Images in the training and validation sets were labeled using LabelImg and MakeSense.AI. This labeling helped the model learn to differentiate between caries, healthy teeth, and background.
 
 ## Results / Findings
 - Successfully implemented a YOLOv8 and YOLOv11 object detection model to identify two target classes: cavities and plaque.
