@@ -19,8 +19,14 @@ This project aimed to enhance dental diagnostics through the application of deep
 
 ## Results / Findings
 - Successfully implemented a YOLOv8 and YOLOv11 object detection model to identify two target classes: cavities and plaque.
+- Identified early overfitting and applied augmentation techniques to control the risk of overfitting.
+### YOLOv8 
+- The model shows moderate ability to detect carious lesions and struggled to detect healthy teeth, likely due to class  - imbalance or insufficient examples.
+- High-confidence detections (>0.80) were observed for clear and well-lit caries, however, Dense regions with overlapping caries - posed a challenge, often resulting in cluttered bounding boxes with low cofidence score.
+- Augmented data improved model robustness but did not significantly increase AP.
+- Data quality and annotation consistency proved more important than just dataset size.
+### YOLOv11
 - Achieved stable validation accuracy (~85%) after 10 epochs of training.
-- Identified early overfitting, which was mitigated with L2 regularization and dropout layers.
 - Deployed model to test on unseen samples, with real-time inference capabilities.
 - Final model and documentation uploaded to GitHub for public access.
 
