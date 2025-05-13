@@ -31,6 +31,9 @@ This project aimed to enhance dental diagnostics through the application of deep
 * Project packaged for reproducibility and deployment.
 * Presentation and demo materials completed.
 
+## Demo
+https://unomaha.yuja.com/V/Video?v=13022187&node=56381952&a=89808787 
+
 ## Install Instructions
 
 ### Requirements
