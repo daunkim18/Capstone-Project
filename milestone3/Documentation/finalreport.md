@@ -1,24 +1,24 @@
 # YOLO-Based Object Detection for Tooth Analysis
 
 ## Executive Summary
-This project aimed to enhance dental diagnostics through the application of deep learning, specifically using the YOLOv8 object detection model. We developed a system that detects cavities and plaque in intraoral dental images. Our team created a full pipeline from data preprocessing to model training, testing, and packaging for deployment. This final deliverable includes a polished and documented version of our work ready for reproduction or future extension by clinical researchers or developers.
+This project aimed to enhance dental diagnostics through the application of deep learning, specifically using the YOLOv8 and YOLOv11 object detection models. We developed a system that detects cavities and plaque in intraoral dental images. Our team created a full pipeline from data preprocessing to model training, testing, and packaging for deployment. This final deliverable includes a polished and documented version of our work ready for reproduction or future extension by clinical researchers or developers.
 
 ## Project Goals
 - Develop a machine learning pipeline capable of detecting dental anomalies from intraoral images.
-- Train and evaluate a YOLOv8 model to identify cavities and plaque.
+- Train and evaluate a YOLOv8 and YOLOv11 model to identify cavities and plaque.
 - Create a lightweight, reproducible system deployable by dental professionals or researchers.
 - Deliver clear documentation, user instructions, and a demo for end users.
 
 ## Project Methodology
 - **Data Preprocessing**: Stratified splitting of labeled data, normalization, and augmentation using `ImageDataGenerator`.
 - **Visual Validation**: Verified class distributions using bar plots.
-- **Model Architecture**: Trained a CNN model for binary classification and YOLOv8 for object detection tasks.
+- **Model Architecture**: Trained a CNN model for binary classification and YOLOv8 and YOLOv11 for object detection tasks.
 - **Model Training**: Used validation loss monitoring, early stopping, and regularization techniques to prevent overfitting.
 - **Evaluation**: Tested model on unseen intraoral images, and analyzed performance using accuracy, loss curves, and sample predictions.
 - **Packaging**: Project is fully documented and uploaded to GitHub with installation and usage instructions.
 
 ## Results / Findings
-- Successfully implemented a YOLOv8 object detection model to identify two target classes: cavities and plaque.
+- Successfully implemented a YOLOv8 and YOLOv11 object detection model to identify two target classes: cavities and plaque.
 - Achieved stable validation accuracy (~85%) after 10 epochs of training.
 - Identified early overfitting, which was mitigated with L2 regularization and dropout layers.
 - Deployed model to test on unseen samples, with real-time inference capabilities.
@@ -26,7 +26,7 @@ This project aimed to enhance dental diagnostics through the application of deep
 
 **Key Outcomes:**
 * Labeled dataset prepared and visually validated.
-* YOLOv8 trained for dental object detection.
+* YOLOv8 and YOLOv11 trained for dental object detection.
 * Binary CNN model also explored for baseline classification.
 * Project packaged for reproducibility and deployment.
 * Presentation and demo materials completed.
@@ -36,7 +36,7 @@ This project aimed to enhance dental diagnostics through the application of deep
 ### Requirements
 - Python 3.10+
 - pip
-- `ultralytics` (for YOLOv8)
+- `ultralytics` (for YOLOv8 and YOLOv11)
 - TensorFlow (for CNN version)
 - OpenCV
 - Matplotlib
@@ -102,29 +102,60 @@ Capstone-Project/
     │   └── demo_yolo11.py
     ├── runs/
     └── yolov8n.pt
+    └── yolov11n.pt
 ```
 
 ---
 
-### 5. Run Training
+## Model Training
+
+### 🔹 YOLOv8
 
 ```bash
 python scripts/prepare_data.py
 python scripts/train.py
 ```
 
-Training results will be saved in `runs/detect/train14/` or similar.
+### 🔹 YOLOv11
+
+```bash
+python scripts/train.py --data configs/data.yaml --epochs 100 --batch 8 --imgsz 640
+```
+
+Results will appear under `runs/detect/train14/`.
 
 ---
 
-### 6. Run Demo Inference
+## 🎯 Inference Demo
 
-Prepare an image and label file:
+Ensure these files exist:
+- `data/images/test/demo.jpg`
+- `data/labels/test/demo.txt`
 
+Then run:
+```bash
+python scripts/demo_yolo11.py
 ```
-data/images/test/demo.jpg
-data/labels/test/demo.txt
+
+Output: `demo_output.jpg` with detected bounding boxes.
+
+---
+
+## YOLO CLI Prediction (Optional)
+
+```bash
+yolo task=detect mode=predict model=runs/detect/train14/weights/best.pt source=data/images/test/
 ```
+
+---
+
+## Notes
+- Label format is YOLO (.txt) with class ID and normalized coordinates.
+- Make sure all images have corresponding label files in `labels/`.
+- Demo script uses OpenCV to visualize bounding boxes.
+
+---
+
 
 Then:
 
@@ -144,6 +175,7 @@ You will get a visual output in `demo_output.jpg`.
 1. Ensure your dataset is in YOLO format (images/train, images/val, and labels/).
 2. Run:
    yolo task=detect mode=train model=yolov8n.pt data=dental.yaml epochs=20 imgsz=640
+   yolo task=detect mode=train model=yolov11n.pt data=dental.yaml epochs=20 imgsz=640
 #### To Make Predictions
 1. Place test images into a folder (data/test/).
 2. Run:
