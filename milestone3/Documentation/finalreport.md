@@ -36,6 +36,106 @@ https://unomaha.yuja.com/V/Video?v=13022187&node=56381952&a=89808787
 
 ## Install Instructions
 
+We have established and documented the required environments, including:
+* YOLOv8 (AI object detection).
+   
+* Kaggle Datasets (Training images).
+* Python Libraries (NumPy, OpenCV, TensorFlow, Pandas, matplotlib).
+* GitHub (Version control).
+* Other Libraries (Shutil, OS, sklearn, seaborn, YOLO).
+* Installing necessary dependencies for image processing and augmentation.
+* Divide the images into training, validation, and test sets using stratified sampling.
+* Used LabelImg to label objects(caries) in the images.
+* Setting up repositories and ensuring proper access for all team members.
+* Added liscence GNU General Public License v3.0.
+* Using platforms for programming - Visual studio, Jupiter notebook.
+
+YOLOv8 Quickstart
+See below for quickstart installation and usage examples. For comprehensive guidance on training, validation, prediction, and deployment, refer to the official full Ultralytics Docs.
+YOLOv11 Quickstart
+## How to Run the Model
+1. Prepare the Dataset
+python scripts/prepare_data.py
+2. Train the model
+python script/train.py
+Results will be saved across multiple training runs inside the runs/detect/ directory.
+
+## Install
+Install the ultralytics package in a Python ≥ 3.8 environment with PyTorch ≥ 1.8:
+For alternative installation methods (Conda, Docker, source build), see the Ultralytics Quickstart Guide.
+## Usage
+Command Line Interface (CLI) Run predictions, training, validation, and exports directly from your terminal:
+## Predict with a pretrained YOLOv8n model
+yolo predict model=yolov8n.pt For additional CLI examples, check the YOLO CLI Docs.
+### Python API
+Embed YOLOv8 into your Python projects with the same flexibility as the CLI:
+from ultralytics import YOLO
+
+### Load a pretrained YOLOv8n model
+model = YOLO("yolov8n.pt")
+
+### Train on your dataset (e.g., coco8.yaml) for 50 epochs at 640px
+model.train(data="coco8.yaml", epochs=50, imgsz=640, device="0")
+
+### Validate on the validation split
+model.val()
+
+### Run inference on an image
+results = model("path/to/image.jpg")
+results[0].show()
+
+### Export to ONNX
+model.export(format="onnx")
+### NumPy
+here are the quick start installations steps and usage instructions for NumPy https://numpy.org/install/
+Install
+pip install numpy
+Usage
+To perform the mathematical operations
+Open CV
+here are the quick start installations steps and usage instructions for Open CV (https://pypi.org/project/opencv-python/#installation-and-usage )
+### Open CV
+here are the quick start installations steps and usage instructions for Open CV (https://pypi.org/project/opencv-python/#installation-and-usage )
+### Install
+pip install opencv
+Usage
+Used for computer vision and processing
+### Tensor Flow
+here are the quick start installations steps and usage instructions for Tensor Flow(https://pypi.org/project/tensorflow/ )
+### Install
+pip install tensorflow
+### usage
+Used for high performance numerical computation.
+### Pandas
+here are the quick start installations steps and usage instructions for Pandas(https://pypi.org/project/pandas/#documentation )
+### Install
+pip install pandas
+### Usage
+Used for data analysis and manipulation.
+### Matplotlib
+here are the quick start installations steps and usage instructions for matplotlibs(https://matplotlib.org/stable/install/index.html )
+### Install
+pip install matplotlib
+### Usage
+Used for data visualizations.
+### sklearn
+here are the quick start installations steps and usage instructions for sklearn(https://pypi.org/project/scikit-learn/ )
+### Install
+pip install scikit-learn
+### Usage
+To provide the comprehensive tool kit for machine learning
+### seaborn
+here are the quick start installations steps and usage instructions for seaborn(https://pypi.org/project/seaborn/ )
+### Install
+pip install seaborn
+### Usage
+Visualization library for statistical graphics plotting in python
+### LabelImg
+here are the quick start installations steps and usage instructions for LabelImg(https://pypi.org/project/labelImg/ )
+### Install
+pip3 install labelImg labelImg labelImg [IMAGE_PATH] [PRE-DEFINED CLASS FILE]
+### Usage
+Used for annotaions of images
 ### Requirements
 - Python 3.10+
 - pip
